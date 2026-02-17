@@ -8,7 +8,7 @@ build:
 	@mkdir -p $(BINARY_DIR)
 	go build -o $(BINARY_DIR)/pomodoro ./cmd/pomodoro
 	go build -o $(BINARY_DIR)/server    ./cmd/server
-	@echo "✅ Built: bin/pomodoro, bin/server"
+	@echo " Built: bin/pomodoro, bin/server"
 
 test:
 	go test ./... -v
