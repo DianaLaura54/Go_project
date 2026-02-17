@@ -51,15 +51,15 @@ func (t *Timer) Run() {
 
 	for {
 		if t.cfg.TotalSessions > 0 && session >= t.cfg.TotalSessions {
-			fmt.Printf("\n✅ All %d session(s) complete! Great work!\n\n", t.cfg.TotalSessions)
+			fmt.Printf("\n All %d session(s) complete! Great work!\n\n", t.cfg.TotalSessions)
 			return
 		}
 
 		round++
 		if t.cfg.TotalSessions > 0 {
-			fmt.Printf("\n📋 Session %d/%d — Round %d\n", session+1, t.cfg.TotalSessions, round)
+			fmt.Printf("\n Session %d/%d — Round %d\n", session+1, t.cfg.TotalSessions, round)
 		} else {
-			fmt.Printf("\n📋 Round %d\n", round)
+			fmt.Printf("\n Round %d\n", round)
 		}
 
 		// Work phase
@@ -165,5 +165,5 @@ $notifier.Show([Windows.UI.Notifications.ToastNotification]::new($template))`, t
 	}
 
 	// Always print to terminal regardless
-	fmt.Printf("\n  🔔 %s — %s\n", title, message)
+	fmt.Printf("\n   %s — %s\n", title, message)
 }

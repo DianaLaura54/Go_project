@@ -33,6 +33,6 @@ func Send(title, message string) {
 
 	if err != nil {
 		// Graceful fallback
-		fmt.Printf("\n🔔 [%s] %s\n", title, message)
+		fmt.Printf("\n[%s] %s\n", title, message)
 	}
 }
